@@ -1,19 +1,18 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+"""Configure the Sphinx documentation builder for the demo documentation set.
 
+Contained are some of the most common configuration options. For a full list,
+see the documentation:
+
+    https://www.sphinx-doc.org/en/master/usage/configuration.html
+"""
 # -- Path setup --------------------------------------------------------------
+# Add local extensions (or modules to document with autodoc) to sys.path here.
+# Make sure to use os.path.abspath for absolute paths.
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
 
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
+import hedron_sphinx_theme
 
 # -- Project information -----------------------------------------------------
 
@@ -48,7 +47,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'hedron_sphinx_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
