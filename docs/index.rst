@@ -7,6 +7,8 @@ Welcome to the documentation for Hedron Vision's custom Sphinx theme!
    :maxdepth: 2
    :caption: Contents:
 
+   changelog
+
 
 Indices and tables
 ==================
